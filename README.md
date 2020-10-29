@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+# https://wkrzywiec.medium.com/build-and-run-angular-application-in-a-docker-container-b65dbbc50be8
+
+git clone https://github.com/wkrzywiec/aston-villa-app.git
+docker build -t av-app-image .
+
+docker run --name av-app-container -d -p 8080:80 av-app-image
+
+
