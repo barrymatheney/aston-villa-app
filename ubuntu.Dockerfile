@@ -21,7 +21,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-RUN ./node_modules/karma/bin/karma start && ng test
+RUN ./node_modules/karma/bin/karma startkarma.conf.js  && ng test
 #RUN webdriver-manager start
 
 
